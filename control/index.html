@@ -1,0 +1,29 @@
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Control Panel</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="socket.io/socket.io.js"></script>
+  </head>
+  <body class="darkMode">
+    <div class="header">
+      <h1 class="center">Control Panel</h1>
+    </div>
+    <div class="flex">
+        <div class="flexElement" onclick="switchTheme()">
+          <button>Switch Theme</button>
+        </div>
+        <div class="flexElement" id="screen" onclick="setOption('screen',this.id)">
+          <button><span style="color:red;">•</span> Switch Showing Screen</button>
+        </div>
+        <div class="flexElement" id="control" onclick="setOption('control',this.id)">
+          <button><span style="color:red;">•</span> Switch Control</button>
+        </div>
+        <div class="flexElement" id="FPS" onclick="setOption('control',this.id)">
+          <input value="10" id="fps"></input>
+          <label for="fps">FPS of Stream</label>
+        </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

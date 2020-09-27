@@ -1,0 +1,104 @@
+.header {
+  height:10vh;
+  width:100vw;
+  background-color:var(--tertiary-bg-color);
+  transition:0.3s;
+}
+
+.center {
+  margin: auto;
+  text-align: center;
+  line-height: 10vh;
+}
+
+.flex {
+  width:100vw;
+  height:90vh;
+  display:flex;
+  flex-directon: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexElement {
+  width:18vw;
+  height:16vh;
+  margin:1vh 1vw;
+  background-color:var(--secondary-bg-color);
+  transition: 0.3s;
+  border-radius:3px;
+  overflow:hidden;
+}
+
+.flexElement:hover {
+  background-color:var(--tertiary-bg-color);
+  border-radius:10px;
+}
+
+button {
+  background-color:var(--text-box-color);
+  outline:0;
+  border:none;
+  width:90%;
+  height:4vh;
+  margin:5vh 5%;
+  border-radius:5px;
+  color:inherit;
+  transition: 0.3s;
+  overflow-y: scroll;
+}
+
+button::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+button:active {
+  background-color:var(--text-box-color);
+  border-radius:10px;
+}
+
+input{
+  background-color:var(--text-box-color);
+  outline:0;
+  border:none;
+  width:90%;
+  height:4vh;
+  margin:5vh 5%;
+  padding:1vh 1vw;
+  border-radius:5px;
+  color:inherit;
+  transition: 0.3s;
+}
+
+label {
+  
+}
+
+body {
+  margin:0;
+  padding:0;
+  user-select: none;
+  -webkit-user-select: none;
+  background-color:var(--main-bg-color);
+  font-family: sans-serif;
+  transition:0.3s;
+  overflow: hidden;
+}
+
+.darkMode {
+  --main-bg-color: #36393f;
+  --secondary-bg-color: #2f3136;
+  --tertiary-bg-color: #202225;
+  --text-box-color: #40444b;
+  color: #FFFFFF;
+}
+
+.lightMode {
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #f2f3f5;
+  --tertiary-bg-color: #e3e5e8;
+  --text-box-color: #ebedef;
+  color: #000000;
+}
